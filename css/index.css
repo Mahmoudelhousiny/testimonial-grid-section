@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Open+Sans&family=Raleway:wght@400;700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap");
+/* start global rules */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+/* end global rules */
+/* start variables */
+:root {
+  --Moderate-violet: hsl(263, 55%, 52%);
+  --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --Light-gray: hsl(0, 0%, 81%);
+  --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+/* end variables */
+/* start component */
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+}
+/* end component */
+/* start main */
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: #efffff;
+  display: grid;
+  align-content: center;
+}
+.main .parent {
+  width: 70%;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+}
+.daniel {
+  display: grid;
+  gap: 10px;
+  padding: 30px;
+  background-color: var(--Moderate-violet);
+  background-image: url(../img/bg-pattern-quotation.svg);
+  background-position: 80% 5%;
+  background-repeat: no-repeat;
+  grid-area: 1/1/1/3;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.main .parent .daniel .container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.daniel .container .daniel-img img {
+  border: 2px solid #fff;
+  max-width: 100%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.main .parent .daniel .container .desc {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.main .parent .daniel h2,
+.main .parent .daniel .container .desc h3 {
+  color: #fff;
+}
+.main .parent .daniel p,
+.main .parent .daniel .container .desc p {
+  color: var(--Light-gray);
+  line-height: 1.5;
+}
+.jonathan {
+  display: grid;
+  gap: 10px;
+  padding: 30px;
+  background-color: var(--Very-dark-grayish-blue);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.main .parent .jonathan .container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.jonathan .container .jonathan-img img {
+  border: 2px solid #fff;
+  max-width: 100%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.main .parent .jonathan .container .desc {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.main .parent .jonathan h2,
+.main .parent .jonathan .container .desc h3 {
+  color: #fff;
+}
+.main .parent .jonathan p,
+.main .parent .jonathan .container .desc p {
+  line-height: 1.5;
+  color: var(--Light-gray);
+}
+
+.jeanette {
+  display: grid;
+  gap: 10px;
+  padding: 30px;
+  background-color: var(--white);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  grid-area: 2/1/2/2;
+}
+.main .parent .jeanette .container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.jeanette .container .jeanette-img img {
+  border: 2px solid #fff;
+  max-width: 100%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.main .parent .jeanette .container .desc {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.main .parent .jeanette h2,
+.main .parent .jeanette .container .desc h3 {
+  color: #333;
+}
+.main .parent .jeanette p,
+.main .parent .jeanette .container .desc p {
+  line-height: 1.5;
+  color: var(--Very-dark-grayish-blue);
+}
+.patrick {
+  display: grid;
+  gap: 10px;
+  padding: 30px;
+  background-color: var(--Very-dark-blackish-blue);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  grid-area: 2/2/2/4;
+}
+.main .parent .patrick .container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.patrick .container .patrick-img img {
+  border: 2px solid var(--Moderate-violet);
+  max-width: 100%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.main .parent .patrick .container .desc {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.main .parent .patrick h2,
+.main .parent .patrick .container .desc h3 {
+  color: var(--white);
+}
+.main .parent .patrick p,
+.main .parent .patrick .container .desc p {
+  color: var(--Light-gray);
+  line-height: 1.5;
+}
+.kira {
+  display: grid;
+  gap: 10px;
+  padding: 30px;
+  background-color: var(--white);
+  box-shadow: 11px 9px 20px 3px #d1cccc;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  grid-area: 1/4/3/5;
+}
+.main .parent .kira .container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.kira .container .kira-img img {
+  border: 2px solid #fff;
+  max-width: 100%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.main .parent .kira .container .desc {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.main .parent .kira h2,
+.main .parent .kira .container .desc h3 {
+  color: var(--Very-dark-grayish-blue);
+}
+.main .parent .kira p,
+.main .parent .kira .container .desc p {
+  color: var(--Very-dark-grayish-blue);
+  line-height: 1.5;
+}
+@media (min-width: 320px) and (max-width: 1000px) {
+  .main{
+    height: auto;
+  }
+  .main .parent{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1260px) {
+  .main{
+    height: auto;
+  }
+}
+/* end main */
